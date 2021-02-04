@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MLAppTwo</string>
+    <string-array name="origin">
+        <item>USA</item>
+        <item>Canada</item>
+        <item>UK</item>
+        <item>Germany</item>
+        <item>Russia</item>
+        <item>India</item>
+        <item>China</item>
+    </string-array>
 </resources>

@@ -1,89 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/rel_lay"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
+
     <ScrollView
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_height="wrap_content">
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_input_box0"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/origin"
+                    android:layout_width="match_parent"
+                    android:focusable="false"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Choose car's origin"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/user_input_box1"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp">
+
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/user_input1"
+                    android:id="@+id/no_of_cylinders"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:hint="Cylinders"
+                    android:hint="No. of Cylinders"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/user_input_box2"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp">
+
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/user_input2"
+                    android:id="@+id/displacement"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:hint="Add"
+                    android:hint="Displacement (M)"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/user_input_box3"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp">
+
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/user_input3"
+                    android:id="@+id/horse_power"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:hint="Add"
+                    android:hint="Horse Power (hp)"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/user_input_box4"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp">
+
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/user_input4"
+                    android:id="@+id/weight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:hint="Add"
+                    android:hint="Weight"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/user_input_box5"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp">
+
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/user_input5"
+                    android:id="@+id/acceleration"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:hint="Add"
+                    android:hint="Acceleration"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,39 +124,61 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp">
+
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/user_input6"
+                    android:id="@+id/model_year"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:hint="Add"
+                    android:hint="Model Year"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_700">
+
+                <TextView
+                    android:id="@+id/result_text_view"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg"
+                    android:padding="40dp"
+                    android:text="Result: "
+                    android:textColor="@color/white" />
+            </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
     </ScrollView>
 
     <LinearLayout
-        android:weightSum="2"
-        android:layout_margin="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:layout_centerHorizontal="true"
+        android:background="@color/purple_700"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
         <Button
-            android:layout_weight="1"
             android:id="@+id/clear_value_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:text="Clear"/>
-        <Button
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            app:backgroundTint="@color/red"
+            android:text="Clear" />
+
+        <Button
             android:id="@+id/predict_efficiency_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Predict Efficiency"/>
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            app:backgroundTint="@color/green"
+            android:text="Predict Efficiency" />
     </LinearLayout>
 
 </RelativeLayout>
