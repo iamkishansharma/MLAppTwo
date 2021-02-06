@@ -2,12 +2,12 @@
 
 <table style="width:100%; align:center;" >
   <tr>
-    <th>Light Mode</th>
     <th>Dark Mode</th>
+    <th>Light Mode</th>
   </tr>
   <tr>
-    <td><img alt="Light" src="https://raw.githubusercontent.com/iamkishansharma/my-project-screenshots/main/MLAppTWO-1.jpg" width="300px"/></td>
-    <td><img alt="Dark" src="https://raw.githubusercontent.com/iamkishansharma/my-project-screenshots/main/MLAppTWO-2.jpg" width="300px"/></td>
+    <td><img alt="Dark" src="https://raw.githubusercontent.com/iamkishansharma/my-project-screenshots/main/MLAppTWO-1.jpg" width="300px"/></td>
+    <td><img alt="Light" src="https://raw.githubusercontent.com/iamkishansharma/my-project-screenshots/main/MLAppTWO-2.jpg" width="300px"/></td>
 </table>
 
 #developed with ❤️ by [@iamkishansharma]( https://github.com/iamkishansharma )`
